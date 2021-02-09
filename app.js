@@ -5,7 +5,6 @@ const searchSong = () =>{
     fetch(url)
     .then(res => res.json())
     .then(data => displaySong(data.data)) // ai jaygay dataar vitore data ase tai
-    .catch(error => console.log(error))
 }
 
 const displaySong = songs => {
@@ -36,7 +35,6 @@ const getLyric = (artist,title ) => {
     fetch(url)
     .then(res => res.json())
     .then(data => displayLyrics(data.lyrics))
-    .catch(error => console.log(error))
 }
 
 const displayLyrics = lyrics => {
